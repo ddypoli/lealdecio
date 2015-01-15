@@ -1,0 +1,294 @@
+@font-face{
+    font-family: "br";
+    src: url('../fonts/br.otf');
+}
+
+@font-face{
+    font-family: "bri";
+    src: url('../fonts/bri.otf');
+}
+
+@font-face{
+    font-family: "f";
+    src: url('../fonts/f.otf');
+}
+
+@font-face{
+    font-family: "l";
+    src: url('../fonts/l.otf');
+}
+
+/* Sobrescrevendo Bootstrap */
+.navbar{
+    background: #fff;
+    z-index: 100;
+}
+
+.navbar-default{
+    border-bottom: none;
+}
+
+.navbar a{
+    color: #7F8289;
+}
+
+body{
+    font-family: "br";
+    font-size: 14pt;
+    color: #555;
+}
+
+#text-logo:hover{
+    color: #9DCC7B;
+}
+
+.navbar a:hover{
+    color: #fff;
+}
+
+.nav-pills > li > a{
+    border-radius: 0;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li.active > a{
+    background: #9DCC7B; //#c8e6b2
+    color: #fff;
+}
+
+.nav-pills > li.active > a:hover{
+    background: #9DCC7B;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    min-height: 850px;
+    padding: 50px 20px;
+}
+
+.page:nth-child(2n-1){
+    background: #e3f3d8;
+}
+
+.page:nth-child(2n){
+    background: #d6ecc5;
+}
+
+nav{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+nav #text-logo{
+    position: relative;
+    text-transform: uppercase;
+    left: 10px;
+    top: 5px;
+    font-family: "f";
+    font-size: 2em;
+}
+
+nav ul{
+    position: relative;
+    float: right;
+    margin: 5px 5px 0 0;
+    font-size: 0.9em;
+}
+
+
+nav a:hover{
+    text-decoration: none;
+}
+
+#home{
+    background: no-repeat fixed center center;
+}
+
+#home .anuncio{
+    position: absolute;
+    height: 200px;
+    top: 50%;
+    margin-top: -50px;
+    right: 5%;
+    text-align: center;
+    opacity: 0.9;
+    display: none;
+}
+
+/* Cores inutilizadas
+
+#produtos, #contato{
+    background: #2F3238;
+}
+
+#vendedor, #mais{
+    background: #26292E;
+}
+*/
+#vendedor #conteiner{
+    width: 930px;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    max-height: 540px;
+    overflow: hidden;
+    
+}
+
+#vendedor #img-vendedor{
+    width: 360px;
+    float: left;
+    margin-right: 30px;
+}
+
+#vendedor #sobre-vendedor{
+    max-width: 540px;
+    display: inline-block;
+}
+
+#sobre-vendedor h1{
+    color: rgb(66, 160, 66);
+    margin-top: 0;
+    line-height: 1.3em;
+}
+
+#vendedor #descricao-vendedor{
+    max-height: 370px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 12px;
+}
+
+
+#img-vendedor img{
+    max-height: 540px;
+}
+
+.redes{
+    padding: 0;
+    list-style: none;
+}
+
+.redes li{
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+    opacity: 0.3;
+}
+
+.redes li:hover{
+    opacity: 0.5;
+}
+
+.redes .facebook{
+    background: url('../images/facebook.png') no-repeat center;
+}
+
+.redes .twitter{
+    background: url('../images/twitter.png') no-repeat center;
+}
+
+.redes .google-plus{
+    background: url('../images/google_plus.png') no-repeat center;
+}
+
+.redes a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+
+#contato-form{
+    width: 700px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    float: left;
+}
+
+#contato .informacoes-pessoais{
+    line-height: 3em;
+    float: left;
+    height: 562px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+}
+
+#contato div span{
+    display: block;
+}
+
+#contato-form input, #contato-form textarea{
+    width: 100%;
+    margin: 0 0 2px 0;
+    border: none;
+    padding: 16px;
+    background: #BBCAB1;
+    outline: none;
+    color: #555;
+}
+
+::-webkit-input-placeholder{
+    color: #888;
+}
+
+input:-moz-placeholder{
+    color: #888;
+}
+
+textarea:-moz-placeholder{
+    color: #888;
+}
+
+.submit{
+    display: inline-block;
+    background: #BBCAB1;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #555;
+    margin-top: 15px;
+}
+
+.submit:hover{
+    color: #fff;
+    background: #9DCC7B;
+    text-decoration: none;
+}
+
+.button{
+    display: inline-block;
+    background: #BBCAB1;
+    padding: 0.2em 0.3em;
+    text-decoration: none;
+    // font-size: 1.3em;
+    color: #555;
+    // margin-top: 15px;
+}
+
+.button:hover{
+    color: #fff;
+    background: #9DCC7B;
+    text-decoration: none;
+}
+
+.s{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.s:hover{
+    color: #666;
+}
+
+footer{
+    background: #2F3238;
+}

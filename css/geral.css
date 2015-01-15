@@ -1,0 +1,374 @@
+@font-face{
+    font-family: "br";
+    src: url('../fonts/br.otf');
+}
+
+@font-face{
+    font-family: "bri";
+    src: url('../fonts/bri.otf');
+}
+
+@font-face{
+    font-family: "f";
+    src: url('../fonts/f.otf');
+}
+
+@font-face{
+    font-family: "l";
+    src: url('../fonts/l.otf');
+}
+
+
+/*==============================
+    Geral
+==============================*/
+a,
+a:hover,
+a:active{
+    color: rgb(66, 160, 66);
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "br";
+    font-size: 14pt;
+    color: #555;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    padding: 78px 20px 54px 20px;
+    overflow: hidden;
+}
+
+.page:nth-child(2n-1){
+    background: #e3f3d8;
+}
+
+.page:nth-child(2n){
+    background: #d6ecc5;
+}
+
+div.tudo{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*==============================
+    Redes sociais
+==============================*/
+ul.redes{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    list-style: none;
+}
+
+.redes li{
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+    opacity: 0.3;
+}
+
+.redes li:hover{
+    opacity: 0.5;
+}
+
+.redes .facebook{
+    background: url('../images/facebook.png') no-repeat center;
+}
+
+.redes .twitter{
+    background: url('../images/twitter.png') no-repeat center;
+}
+
+.redes .google-plus{
+    background: url('../images/google_plus.png') no-repeat center;
+}
+
+.redes a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+#novo-vendedor{
+    text-align: center;
+    font-size: 2em;
+}
+
+#home{
+    background: no-repeat fixed center center;
+}
+
+/*==============================
+    Terrenos
+==============================*/
+#produtos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#produtos .terreno{
+    width: 450px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.terreno img{
+    background: #444;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.terreno h1{
+    color: rgb(66, 160, 66);
+}
+
+.terreno .descricao{
+    text-align: justify;
+}
+
+.terreno p:not(:first-child){
+    display: none;
+}
+
+.terreno .detalhes{
+    display: inline-block;
+    background: #BBCAB1;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #555;
+}
+
+.terreno .detalhes:hover{
+    color: #fff;
+    background: #9DCC7B;
+    text-decoration: none;
+}
+
+.mostrar{
+    display: none;
+}
+
+/*==============================
+    InfomaÃƒÂ§ÃƒÂµes sobre o vendedor
+==============================*/
+#vendedor img{
+    display: inline-block;
+    float: left;
+    width: 360px;
+}
+
+#vendedor .descricao{
+    position: absolute;
+    display: inline-block;
+    max-width: 540px;
+    margin-left: 20px;
+    overflow: visible;
+}
+
+.descricao h1{
+    color: rgb(66, 160, 66);
+    margin-top: 0;
+    line-height: 1.3em;
+}
+
+
+/*===============================
+    Contato
+===============================*/
+#contato form{
+    width: 700px;
+    float: left;
+}
+
+#contato div{
+    display: inline-block;
+    line-height: 3em;
+    height: 466px;
+    margin-left: 20px;
+}
+
+#contato div span{
+    display: block;
+}
+
+#contato form input,
+#contato form textarea{
+    width: 100%;
+    margin: 0 0 2px 0;
+    border: none;
+    padding: 16px;
+    background: #BBCAB1;
+    outline: none;
+    color: #555;
+}
+
+#contato div:nth-child(2){
+    //color: rgb(66, 160, 66);
+}
+
+::-webkit-input-placeholder{
+    color: #888;
+}
+
+input:-moz-placeholder{
+    color: #888;
+}
+
+textarea:-moz-placeholder{
+    color: #888;
+}
+
+.submit{
+    display: inline-block;
+    background: #BBCAB1;
+    padding: 18px 40px;
+    font-size: 1.3em;
+    color: #555;
+    margin-top: 15px;
+    border: none;
+}
+
+.submit:hover{
+    color: #fff;
+    background: #9DCC7B;
+}
+
+
+/*===============================
+    RodapÃƒÂ©
+===============================*/
+#mais{
+    height: 270px;
+    background: #2F3238;
+    color: #fff;
+    padding: 10px;
+}
+
+#mais .redes-sociais{
+    text-align: center;
+    width: 450px;
+    float: left;
+}
+
+.mensagem{
+    width: 450px;
+    float: right;
+    text-align: justify;
+}
+
+.mensagem .msg-next{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    width: 460px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    width: 460px;
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.mensagem {
+    width: 460px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.mensagem div {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.mensagem p {
+    width: 460px;
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+
+.slider{
+    margin-left: 40px;
+}
+
+/*
+.slider .jcarousel-navigation-prev,
+.slider .jcarousel-navigation-next{
+    display: inline-block;
+    position: relative;
+    top: -190px;
+}
+
+.slider .jcarousel-navigation-prev{
+    left: -40px;
+}
+
+.slider .jcarousel-navigation-next{
+    right: -432px;
+}
+*/

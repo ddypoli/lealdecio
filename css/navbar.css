@@ -1,0 +1,62 @@
+/* Sobrescrevendo Bootstrap */
+nav{
+    font-family: "Helvetica Neue", Helvetica,Arial, sans-serif;
+    //position: fixed;
+    //width: 100%;
+}
+
+nav ul{
+    //display: inline-block;
+    float: right;
+    margin: 3px 5px 0 0;
+    //font-size: 0.9em;
+}
+
+nav a,
+nav a:hover{
+    text-decoration: none;
+}
+
+.navbar a{
+    color: #7F8289;
+}
+
+.navbar a:hover{
+    color: #9DCC7B;
+}
+
+.navbar{
+    background: #fff;
+    z-index: 100;
+}
+
+.navbar-default{
+    border-bottom: none;
+}
+
+.navbar .title{
+    font-family: 'f';
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 5px 0 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-pills a:hover{
+    color: #fff;
+}
+
+.nav-pills > li > a{
+    line-height: 1.7em;
+    border-radius: 0;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li.active > a{
+    background: #9DCC7B; //#c8e6b2
+    color: #fff;
+}
+
+.nav-pills > li.active > a:hover{
+    background: #9DCC7B;
+}
